@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="border-b border-[#0000004d] py-6 flex items-center justify-center">
+    <div className="border-b border-[#B3B3B3] py-6 flex items-center justify-center">
       <div className="container flex justify-between items-center">
         <div className="font-[Inter] font-bold text-2xl">Exclusive</div>
         <ul className="flex gap-12">

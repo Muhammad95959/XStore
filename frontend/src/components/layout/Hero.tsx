@@ -2,9 +2,9 @@ import heroImage from "../../assets/hero-image.jpg";
 
 export default function Hero() {
   return (
-    <div className="justify-center items-center flex gap-6">
+    <div className="justify-center items-center flex gap-6 mb-20">
       <div className="container flex justify-start gap-10">
-        <ul className="border-r border-[#0000004d] pt-8 pr-20 flex flex-col gap-6 justify-center">
+        <ul className="border-r border-[#B3B3B3] pt-8 pr-20 flex flex-col gap-6 justify-center">
           <li>
             <a>Phones</a>
           </li>

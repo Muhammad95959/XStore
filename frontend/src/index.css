@@ -40,3 +40,22 @@ body {
     width: 1270px;
   }
 }
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+.star {
+  width: 16px;  
+  aspect-ratio: 1;
+  background: #F8CA00;
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+}
+
