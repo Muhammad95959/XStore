@@ -33,16 +33,22 @@ export default function Categories() {
             {categories.map((category) => {
               return (
                 <button
-                  className="border border-[#B3B3B3] flex-1 aspect-square flex justify-center items-center flex-col gap-4 cursor-pointer"
+                  key={category.name}
+                  className="border border-[#B3B3B3] flex-1 aspect-square flex justify-center items-center flex-col gap-4 cursor-pointer transition-colors duration-300"
                   onClick={() => handleCategoryChange(category.name)}
                   style={{ backgroundColor: selected === category.name ? "#DB4444" : "transparent" }}
                 >
                   <img
-                    className="w-[40%]"
+                    className="w-[40%] transition-[filter] duration-300"
                     src={category.icon}
                     style={{ filter: selected === category.name ? "invert(1)" : "none" }}
                   />
-                  <p style={{ color: selected === category.name ? "white" : "black" }}>{category.name}</p>
+                  <p
+                    className="transition-colors duration-300"
+                    style={{ color: selected === category.name ? "white" : "black" }}
+                  >
+                    {category.name}
+                  </p>
                 </button>
               );
             })}
