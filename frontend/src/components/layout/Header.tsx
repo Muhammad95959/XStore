@@ -9,10 +9,10 @@ export default function Header() {
       <div className="container flex justify-between items-center">
         <div className="font-[Inter] font-bold text-2xl">Exclusive</div>
         <ul className="flex gap-12">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/signup">Sign Up</Link></li>
+          <li className="hover:underline"><Link to="/">Home</Link></li>
+          <li className="hover:underline"><Link to="/contact">Contact</Link></li>
+          <li className="hover:underline"><Link to="/about">About</Link></li>
+          <li className="hover:underline"><Link to="/signup">Sign Up</Link></li>
         </ul>
         <div className="flex items-center gap-6">
           <div className="relative">
