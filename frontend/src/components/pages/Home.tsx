@@ -8,7 +8,7 @@ import OurProducts from "../layout/OurProducts";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header showIcons={true} />
       <Hero />
       <FlashSales />
       <Categories />
