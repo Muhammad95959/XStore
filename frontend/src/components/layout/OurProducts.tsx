@@ -8,7 +8,7 @@ export default function OurProducts() {
   return (
     <div>
       <div className="flex justify-center mb-20">
-        <div className="container border-b border-[#B3B3B3] pb-20">
+        <div className="container">
           <RedHeader>Our Products</RedHeader>
           <div className="font-semibold text-4xl font-[Inter] tracking-wider mb-15">Explore Our Products</div>
           <div className="grid gap-10 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
