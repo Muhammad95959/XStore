@@ -14,7 +14,7 @@ export default function OurProducts() {
           <div className="grid gap-10 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
             {products.map((product, index) => {
               return (
-                <div key={index} className="flex flex-col gap-2 relative snap-start">
+                <div key={index} className="flex flex-col gap-2 relative snap-start cursor-pointer">
                   <div className="bg-[#F5F5F5] h-[250px] shrink-0 p-12  relative group">
                     <img src={product.image} className="w-full h-full object-contain" />
                     <div className="absolute top-3 right-3 grid gap-2">
@@ -25,7 +25,7 @@ export default function OurProducts() {
                         <img src={eyeIcon} />
                       </button>
                     </div>
-                    <button className="absolute bottom-0 left-0 right-0 bg-black text-white justify-center py-2 font-medium hidden cursor-pointer group-hover:flex">
+                    <button className="absolute bottom-0 left-0 right-0 bg-black text-white justify-center py-2 font-medium hidden cursor-pointer group-hover:flex hover:opacity-80">
                       Add To Cart
                     </button>
                   </div>

@@ -17,7 +17,7 @@ export default function FlashSales() {
           <div className="flex gap-6 w-full overflow-x-auto mb-10 snap-mandatory pb-3">
             {productsWithDiscount.map((product, index) => {
               return (
-                <div key={index} className="flex flex-col gap-2 w-[270px] relative snap-start">
+                <div key={index} className="flex flex-col gap-2 w-[270px] relative snap-start cursor-pointer">
                   <div className="bg-[#F5F5F5] w-[270px] h-[250px] shrink-0 p-12 relative group">
                     <img src={product.image} className="w-full h-full object-contain" />
                     <div className="bg-[#DB4444] w-12 h-6 rounded-sm absolute text-[12px] top-3 left-3 text-white flex justify-center items-center">
