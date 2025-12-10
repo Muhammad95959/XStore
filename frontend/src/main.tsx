@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/layout/Root";
+import About from "./components/pages/About";
 import Cart from "./components/pages/Cart";
 import Checkout from "./components/pages/Checkout";
 import Home from "./components/pages/Home";
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
+      { path: "/about", element: <About /> },
       { path: "/signup", element: <SignUp /> },
       { path: "/login", element: <Login /> },
       { path: "/wishlist", element: <WishList /> },

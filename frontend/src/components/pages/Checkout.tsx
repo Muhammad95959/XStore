@@ -1,4 +1,4 @@
-import paymentsImage from "../../assets/payments-image.png";
+import paymentsImage from "../../assets/image-payments.png";
 import { products } from "../../data/products";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";

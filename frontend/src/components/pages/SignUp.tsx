@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import googleIcon from "../../assets/icon-google.svg";
-import signupImage from "../../assets/signup-image.jpg";
+import signupImage from "../../assets/image-signup.jpg";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 
