@@ -3,12 +3,12 @@ import cameraIcon from "../../assets/icon-camera.svg";
 import computerIcon from "../../assets/icon-computer.svg";
 import gamingIcon from "../../assets/icon-gaming.svg";
 import headphoneIcon from "../../assets/icon-headphone.svg";
-import phoneIcon from "../../assets/icon-phone.svg";
+import mobileIcon from "../../assets/icon-mobile.svg";
 import smartwatchIcon from "../../assets/icon-smartwatch.svg";
 import RedHeader from "../ui/RedHeader";
 
 const categories = [
-  { name: "Phones", icon: phoneIcon },
+  { name: "Phones", icon: mobileIcon },
   { name: "Computers", icon: computerIcon },
   { name: "SmartWatch", icon: smartwatchIcon },
   { name: "Camera", icon: cameraIcon },

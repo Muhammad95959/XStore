@@ -4,6 +4,7 @@ import Root from "./components/layout/Root";
 import About from "./components/pages/About";
 import Cart from "./components/pages/Cart";
 import Checkout from "./components/pages/Checkout";
+import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import NotFound from "./components/pages/NotFound";
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
+      { path: "/contact", element: <Contact /> },
       { path: "/about", element: <About /> },
       { path: "/signup", element: <SignUp /> },
       { path: "/login", element: <Login /> },
