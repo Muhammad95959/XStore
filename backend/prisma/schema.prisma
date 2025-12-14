@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                   String    @id @default(uuid())
+  createdAt            DateTime  @default(now())
+  email                String    @unique
+  username             String
+  password             String?
+  googleId             String?   @unique
+  emailConfirmed       Boolean   @default(false)
+  confirmEmailToken    String?
+  confirmEmailExpires  DateTime?
+  resetPasswordOTP     String?
+  resetPasswordExpires DateTime?
+  passwordChangedAt    DateTime?
+  deleted              Boolean   @default(false)
+
+  @@map("users")
+}
